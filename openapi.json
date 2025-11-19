@@ -9025,84 +9025,6 @@
                 "summary": "Query Files"
             }
         },
-        "/ISteamApps/GetAppList/v1": {
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "A successful request"
-                    },
-                    "400": {
-                        "description": "If the user fails to supply all required fields, or supplies invalid data"
-                    },
-                    "403": {
-                        "description": "If the user fails to supply a valid API key, or if the key does not allow access to this resource"
-                    }
-                },
-                "parameters": [
-                    {
-                        "name": "format",
-                        "in": "query",
-                        "description": "The format of the response. Defaults to json",
-                        "required": false,
-                        "schema": {
-                            "type": "string",
-                            "enum": [
-                                "json",
-                                "xml",
-                                "vdf"
-                            ]
-                        }
-                    }
-                ],
-                "externalDocs": {
-                    "url": "https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList"
-                },
-                "tags": [
-                    "ISteamApps"
-                ],
-                "operationId": "GetAppList",
-                "summary": "Get App List"
-            }
-        },
-        "/ISteamApps/GetAppList/v2/v1": {
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "A successful request"
-                    },
-                    "400": {
-                        "description": "If the user fails to supply all required fields, or supplies invalid data"
-                    },
-                    "403": {
-                        "description": "If the user fails to supply a valid API key, or if the key does not allow access to this resource"
-                    }
-                },
-                "parameters": [
-                    {
-                        "name": "format",
-                        "in": "query",
-                        "description": "The format of the response. Defaults to json",
-                        "required": false,
-                        "schema": {
-                            "type": "string",
-                            "enum": [
-                                "json",
-                                "xml",
-                                "vdf"
-                            ]
-                        }
-                    }
-                ],
-                "externalDocs": {
-                    "url": "https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList"
-                },
-                "tags": [
-                    "ISteamApps"
-                ],
-                "operationId": "v2",
-                "summary": "V2"
-            }
-        },
         "/ISteamApps/GetSDRConfig/v1": {
             "get": {
                 "responses": {
@@ -12096,7 +12018,7 @@
     },
     "externalDocs": {
         "url": "https://partner.steamgames.com/doc/webapi",
-        "description": "Steam (Unofficial) API Reference"
+        "description": "Steamworks Web API Reference"
     },
     "security": [
         {
