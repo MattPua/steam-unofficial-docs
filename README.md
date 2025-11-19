@@ -1,26 +1,40 @@
-# steam-unofficial-docs
+# Steam Unofficial Docs
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+Unofficial documentation for the Steamworks Web API, built with [Fumadocs](https://fumadocs.dev).
 
-Run development server:
+This project uses [bun](https://bun.sh) as the package manager and runtime.
+
+## Getting Started
+
+### Development
+
+Run the development server:
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+bun run dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3001 with your browser to see the result.
 
-## Explore
+### Generating Documentation
 
-In the project, you can see:
+Generate documentation pages from the OpenAPI specification:
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+```bash
+bun run generate
+```
+
+This will read `openapi.json` and generate MDX files in `content/docs/`.
+
+## Project Structure
+
+Built with [Fumadocs](https://fumadocs.dev), a documentation framework for Next.js:
+
+- `lib/source.ts`: Content source adapter using [`loader()`](https://fumadocs.dev/docs/headless/source-api)
+- `lib/layout.shared.tsx`: Shared layout options
+- `source.config.ts`: Fumadocs MDX configuration for customizing frontmatter schema and other options
+- `openapi.json`: OpenAPI 3.0 specification for the Steamworks Web API
+- `content/docs/`: Generated documentation pages
 
 | Route                     | Description                                            |
 | ------------------------- | ------------------------------------------------------ |
@@ -28,18 +42,11 @@ In the project, you can see:
 | `app/docs`                | The documentation layout and pages.                    |
 | `app/api/search/route.ts` | The Route Handler for search.                          |
 
-### Fumadocs MDX
-
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
-
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
-
 ## Learn More
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+- [Fumadocs Documentation](https://fumadocs.dev) - learn about Fumadocs
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
+- [Steam Web API Wiki](https://developer.valvesoftware.com/wiki/Steam_Web_API) - official Steam Web API documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+## Original References
+- [Check out XPaw's original unofficial documentation](https://steamapi.xpaw.me/#)
