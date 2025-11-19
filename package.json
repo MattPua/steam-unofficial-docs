@@ -2,6 +2,20 @@
   "name": "steam-unofficial-docs",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
+  "description": "Unofficial documentation for the Steamworks Web API",
+  "keywords": [
+    "steam",
+    "api",
+    "documentation",
+    "unofficial",
+    "steamworks"
+  ],
+  "author": "Matt Pua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattpua/steam-unofficial-docs"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev --port 3001",
