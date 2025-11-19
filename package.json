@@ -27,6 +27,7 @@
     "generate": "bun ./scripts/generate-docs.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "fumadocs-core": "16.0.14",
     "fumadocs-mdx": "14.0.2",
     "fumadocs-openapi": "^10.0.9",
