@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "description": "Unofficial documentation for the Steamworks Web API",
+  "description": "Unofficial documentation for the Steam Web API",
   "keywords": [
     "steam",
     "api",

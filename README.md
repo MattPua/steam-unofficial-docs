@@ -1,6 +1,6 @@
 # Steam Unofficial Docs
 
-Unofficial documentation for the Steamworks Web API, built with [Fumadocs](https://fumadocs.dev).
+Unofficial documentation for the Steam Web API, built with [Fumadocs](https://fumadocs.dev).
 
 This project uses [bun](https://bun.sh) as the package manager and runtime.
 
@@ -33,7 +33,7 @@ Built with [Fumadocs](https://fumadocs.dev), a documentation framework for Next.
 - `lib/source.ts`: Content source adapter using [`loader()`](https://fumadocs.dev/docs/headless/source-api)
 - `lib/layout.shared.tsx`: Shared layout options
 - `source.config.ts`: Fumadocs MDX configuration for customizing frontmatter schema and other options
-- `openapi.json`: OpenAPI 3.0 specification for the Steamworks Web API
+- `openapi.json`: OpenAPI 3.0 specification for the Steam Web API
 - `content/docs/`: Generated documentation pages
 
 | Route                     | Description                                            |
