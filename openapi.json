@@ -2991,7 +2991,7 @@
                 "summary": "Get Tournament Player Stats"
             }
         },
-        "/IDOTA2Match_570/GetTournamentPlayerStats/v2/v1": {
+        "/IDOTA2Match_570/GetTournamentPlayerStats/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -3084,8 +3084,8 @@
                 "tags": [
                     "IDOTA2Match"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetTournamentPlayerStatsV2",
+                "summary": "Get Tournament Player Stats V2"
             }
         },
         "/IDOTA2StreamSystem_570/GetBroadcasterInfo/v1": {
@@ -4460,7 +4460,7 @@
                 "summary": "Get Player Items"
             }
         },
-        "/IEconItems_730/GetSchema/v2/v1": {
+        "/IEconItems_730/GetSchema/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -4504,11 +4504,11 @@
                 "tags": [
                     "IEconItems"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetSchema",
+                "summary": "Get Schema"
             }
         },
-        "/IEconItems_730/GetSchemaURL/v2/v1": {
+        "/IEconItems_730/GetSchemaURL/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -4543,8 +4543,8 @@
                 "tags": [
                     "IEconItems"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetSchemaURL",
+                "summary": "Get Schema URL"
             }
         },
         "/IEconItems_730/GetStoreMetaData/v1": {
@@ -9858,7 +9858,7 @@
                 "description": "Returns the latest news for a game specified by its appID. The response includes an **appnews** object containing the appID and a **newsitems** array with news item information including ID, title, URL, a shortened excerpt (to maxlength characters, terminated by \"...\" if longer), and a comma-separated string of labels and UNIX timestamp. Example: `http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json`"
             }
         },
-        "/ISteamNews/GetNewsForApp/v2/v1": {
+        "/ISteamNews/GetNewsForApp/v2": {
             "get": {
                 "responses": {
                     "200": {
@@ -9955,8 +9955,8 @@
                 "tags": [
                     "ISteamNews"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetNewsForAppV2",
+                "summary": "Get News For App V2"
             }
         },
         "/ISteamRemoteStorage/GetCollectionDetails/v1": {
@@ -10267,7 +10267,7 @@
                 "summary": "Get Player Bans"
             }
         },
-        "/ISteamUser/GetPlayerSummaries/v1": {
+        "/ISteamUser/GetPlayerSummaries/v2": {
             "get": {
                 "responses": {
                     "200": {
@@ -10316,7 +10316,7 @@
                 "description": "Returns basic profile information for a list of 64-bit Steam IDs. Up to 100 Steam IDs can be requested. Some data may be hidden if the user has their profile visibility set to \"Friends Only\" or \"Private\" - in that case, only public data will be returned. Example: `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXXXXXXXXXXXXXXXX&steamids=76561197960435530`"
             }
         },
-        "/ISteamUser/GetPlayerSummaries/v2/v1": {
+        "/ISteamUser/GetPlayerSummaries/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -10360,8 +10360,8 @@
                 "tags": [
                     "ISteamUser"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetPlayerSummariesV2",
+                "summary": "Get Player Summaries V2"
             }
         },
         "/ISteamUser/GetUserGroupList/v1": {
@@ -10629,7 +10629,7 @@
                 "description": "Returns a global achievements overview of a specific game in percentages. Example: `http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=440&format=xml`"
             }
         },
-        "/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v2/v1": {
+        "/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -10675,8 +10675,8 @@
                 "tags": [
                     "ISteamUserStats"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetGlobalAchievementPercentagesForAppV2",
+                "summary": "Get Global Achievement Percentages For App V2"
             }
         },
         "/ISteamUserStats/GetGlobalStatsForGame/v1": {
@@ -10949,7 +10949,7 @@
                 "summary": "Get Schema For Game"
             }
         },
-        "/ISteamUserStats/GetSchemaForGame/v2/v1": {
+        "/ISteamUserStats/GetSchemaForGame/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -11004,11 +11004,11 @@
                 "tags": [
                     "ISteamUserStats"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetSchemaForGameV2",
+                "summary": "Get Schema For Game V2"
             }
         },
-        "/ISteamUserStats/GetUserStatsForGame/v1": {
+        "/ISteamUserStats/GetUserStatsForGame/v2": {
             "get": {
                 "responses": {
                     "200": {
@@ -11068,7 +11068,7 @@
                 "description": "Returns a list of achievements for this user by app id. Example: `http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=440&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&steamid=76561197972495328`"
             }
         },
-        "/ISteamUserStats/GetUserStatsForGame/v2/v1": {
+        "/ISteamUserStats/GetUserStatsForGame/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -11123,8 +11123,8 @@
                 "tags": [
                     "ISteamUserStats"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetUserStatsForGameV2",
+                "summary": "Get User Stats For Game V2"
             }
         },
         "/ISteamWebAPIUtil/GetServerInfo/v1": {
@@ -11202,7 +11202,8 @@
                     "ISteamWebAPIUtil"
                 ],
                 "operationId": "GetSupportedAPIList",
-                "summary": "Get Supported API List"
+                "summary": "Get Supported API List",
+                "description": "Returns a list of all the APIs that steam offers. (Used to build this unofficial list)."
             }
         },
         "/IStoreService/GetAppList/v1": {
@@ -11454,7 +11455,7 @@
                 "summary": "Get Golden Wrenches"
             }
         },
-        "/ITFItems_440/GetGoldenWrenches/v2/v1": {
+        "/ITFItems_440/GetGoldenWrenches/v2/": {
             "get": {
                 "responses": {
                     "200": {
@@ -11489,8 +11490,8 @@
                 "tags": [
                     "ITFItems"
                 ],
-                "operationId": "v2",
-                "summary": "V2"
+                "operationId": "GetGoldenWrenchesV2",
+                "summary": "Get Golden Wrenches V2"
             }
         },
         "/ITFPromos_440/GetItemID/v1": {
@@ -11796,9 +11797,7 @@
                         "description": "(Required)",
                         "required": true,
                         "schema": {
-                            "type": "integer",
-                            "format": "int64",
-                            "default": null
+                            "$ref": "#/components/schemas/SteamId"
                         }
                     },
                     {
@@ -11855,9 +11854,7 @@
                         "description": "(Required)",
                         "required": true,
                         "schema": {
-                            "type": "integer",
-                            "format": "int64",
-                            "default": null
+                            "$ref": "#/components/schemas/SteamId"
                         }
                     },
                     {
@@ -11914,9 +11911,7 @@
                         "description": "(Required)",
                         "required": true,
                         "schema": {
-                            "type": "integer",
-                            "format": "int64",
-                            "default": null
+                            "$ref": "#/components/schemas/SteamId"
                         }
                     },
                     {
